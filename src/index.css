@@ -13,34 +13,69 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-header{
-    display: inline-flex;
-    width: 110rem;
+header {
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  background-color: #384050;
+  justify-content: space-between;
 }
 
-nav{
-align-content: center;
-width: 66%;
+#header_first-part {
+  align-items: center;
+  width: 50%;
+  display: flex;
+}
+
+#header_second-part {
+    align-self: center;
+    display: inline-flex;
+    width: 42%;
+    justify-content: space-around;
+    height: 40%;
+}
+
+input {
+  height: 3.5rem;
+  width: 20rem;
+  margin-left: 1rem;
+  font-size: larger;
 }
 
 a {
+  display: flex;
+  width: 4.5rem;
+  height: -webkit-fill-available;
   font-weight: 500;
-  color: #646cff;
+  color: #F1F8FC;
   text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  margin: 0.5rem;
+  justify-content: center;
 }
 
-#logo{
-  height: 20rem;
+#logo_link {
+  width: auto;
+}
+
+#logo {
+  height: 90%;
+  background-color: #F1F8FC;
+  border-radius: 1rem;
+  margin: auto;
+  margin-left: 2.5rem;
 }
 
 body {
   margin: 0;
-  display: flex;
-  min-width: 320px;
+  display: block;
+  min-width: 100%;
   min-height: 100vh;
+}
+
+main {
+  width: 80%;
+  justify-self: center;
+  justify-items: center;
 }
 
 h1 {
@@ -55,16 +90,57 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #0074C7;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: #0074c7c7;
+  color: #f1f8fcd2;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  background-color: #384050;
+}
+
+#footer_first-part {
+    align-items: center;
+    width: 40%;
+    height: 70%;
+    background-color: #0074C7;
+    align-self: center;
+    margin-left: 3rem;
+}
+
+#footer_first-part a {
+    align-items: center;
+    width: 76%;
+    height: 70%;
+    justify-content: normal;
+        margin: 0;
+    margin-left: 3rem;
+    font-size: xx-large;
+}
+
+#tel {
+  display: inline-flex;
+    font-size: xx-large;
+    color: #F1F8FC;
+    align-items: center;
+    margin-left: 3rem;
+    font-weight: 500;
+}
+
+#footer_second-part {
+    align-self: center;
+    display: inline-flex;
+    width: 42%;
+    justify-content: space-around;
+    height: 50%;
 }
 
 @media (prefers-color-scheme: light) {
@@ -72,10 +148,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+
   button {
-    background-color: #f9f9f9;
+    background-color: #0074C7;
+    color: #F1F8FC;
+    margin: 1rem;
+    font-size: larger;
   }
 }

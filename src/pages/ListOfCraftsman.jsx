@@ -1,9 +1,9 @@
 
-function Home() {
+function ListOfCraftsman() {
 
     return (
         <main>
-            <h1>Home</h1>
+            <h1>Liste d'artisans</h1>
             <div className="card">
                 
                 <p>
@@ -17,4 +17,4 @@ function Home() {
     )
 }
 
-export default Home
+export default ListOfCraftsman

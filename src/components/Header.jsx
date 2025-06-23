@@ -3,13 +3,19 @@ import Logo from '../assets/img/Logo.png'
 function Header() {
     return (
         <header>
-            <div>
-                <img src={Logo} id="logo" alt="Vite logo" />
+            <div id='header_first-part'>
+                <Link to="/" id='logo_link'><img src={Logo} id="logo" alt="Vite logo" /></Link>
+                <label for="site-search"></label>
+                <input type="search" id="site-search" name="q" placeholder=' recherche...' />
+
+                <button>Rechercher</button>
             </div>
 
-            <nav className="flex gap-4">
-                <Link to="/" className="hover:bg-green-800 inline-block border border-blue-500 rounded py-1 px-3 bg-blue-500 text-white">Accueil</Link>
-                <Link to="/about" className="hover:bg-green-800 inline-block border border-blue-500 rounded py-1 px-3 bg-blue-500 text-white">À propos</Link>
+            <nav className="flex gap-4" id='header_second-part'>
+                <Link to="/ListOfCraftsman" ><button>Bâtiment</button></Link>
+                <Link to="/ListOfCraftsman" ><button>Services</button></Link>
+                <Link to="/ListOfCraftsman" ><button>Fabrication</button></Link>
+                <Link to="/ListOfCraftsman" ><button>Alimentation</button></Link>
             </nav>
         </header>
     )
