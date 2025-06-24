@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "graphik";
+    src: url('../src/assets/fonts/Graphik-Regular-Trial.woff');
+    src: url('../src/assets/fonts/Graphik-Regular-Trial.ttf') format('truetype'), url('../src/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -6,7 +13,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,11 +34,11 @@ header {
 }
 
 #header_second-part {
-    align-self: center;
-    display: inline-flex;
-    width: 42%;
-    justify-content: space-around;
-    height: 40%;
+  align-self: center;
+  display: inline-flex;
+  width: 42%;
+  justify-content: space-around;
+  height: 40%;
 }
 
 input {
@@ -40,6 +46,7 @@ input {
   width: 20rem;
   margin-left: 1rem;
   font-size: larger;
+  font-family: graphik;
 }
 
 a {
@@ -51,6 +58,14 @@ a {
   text-decoration: inherit;
   margin: 0.5rem;
   justify-content: center;
+  font-family: graphik;
+}
+
+p {
+  margin: 0px;
+  padding: 10px;
+  color: #384050;
+  font-family: graphik;
 }
 
 #logo_link {
@@ -73,14 +88,22 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 70%;
   justify-self: center;
   justify-items: center;
+  border-left: 4px solid #00497C;
+  border-right: 4px solid #00497C;
+  background-color: #F1F8FC;
+  padding-bottom: 2%;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0;
+  padding: 30px;
+  color: #384050;
+  font-family: graphik;
 }
 
 button {
@@ -93,11 +116,86 @@ button {
   background-color: #0074C7;
   cursor: pointer;
   transition: border-color 0.25s;
+  font-family: graphik;
 }
 
 button:hover {
   background-color: #0074c7c7;
   color: #f1f8fcd2;
+}
+
+/* --------------- Fin des components/balises --------------- */
+
+#home {
+  padding-top: 5rem;
+}
+
+#bloc-home_H1 {
+  border: 4px solid #00497C;
+  background-color: #0074c73d;
+  width: 60%;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+#bloc-txt_home {
+  border: 4px solid #00497C;
+  background-color: #0074c73d;
+  width: 60%;
+  font-size: xx-large;
+  border-radius: 0.5rem;
+}
+
+li{
+  color: #384050;
+  font-family: graphik;
+}
+
+#HazardSign {
+  padding: 3rem;
+}
+
+#bloc-txt_légals-pages {
+  border: 4px solid #00497C;
+  background-color: #0074c73d;
+  width: 60%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#bloc-txt_légals-pages p {
+  color: #82B864;
+  padding: 5rem;
+  font-size: larger;
+}
+
+#error_H1 {
+  color: #CD2C2E;
+}
+
+#bloc-error_H1 {
+  border: 4px solid #00497C;
+  background-color: #0074c73d;
+  width: 60%;
+  text-align: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+#bloc-txt_error {
+  border: 4px solid #00497C;
+  background-color: #0074c73d;
+  width: 60%;
+  text-align: center;
+  font-size: xxx-large;
+    border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+#bloc-txt_error p {
+  padding: 100px;
 }
 
 footer {
@@ -108,39 +206,40 @@ footer {
 }
 
 #footer_first-part {
-    align-items: center;
-    width: 40%;
-    height: 70%;
-    background-color: #0074C7;
-    align-self: center;
-    margin-left: 3rem;
+  align-items: center;
+  width: 40%;
+  height: 70%;
+  background-color: #0074C7;
+  align-self: center;
+  margin-left: 3rem;
 }
 
 #footer_first-part a {
-    align-items: center;
-    width: 76%;
-    height: 70%;
-    justify-content: normal;
-        margin: 0;
-    margin-left: 3rem;
-    font-size: xx-large;
+  align-items: center;
+  width: 90%;
+  height: 70%;
+  justify-content: normal;
+  margin: 0;
+  margin-left: 2rem;
+  font-size: xx-large;
 }
 
 #tel {
   display: inline-flex;
-    font-size: xx-large;
-    color: #F1F8FC;
-    align-items: center;
-    margin-left: 3rem;
-    font-weight: 500;
+  font-size: xx-large;
+  color: #F1F8FC;
+  align-items: center;
+  margin-left: 2rem;
+  font-weight: 500;
+  font-family: graphik;
 }
 
 #footer_second-part {
-    align-self: center;
-    display: inline-flex;
-    width: 42%;
-    justify-content: space-around;
-    height: 50%;
+  align-self: center;
+  display: inline-flex;
+  width: 42%;
+  justify-content: space-around;
+  height: 50%;
 }
 
 @media (prefers-color-scheme: light) {

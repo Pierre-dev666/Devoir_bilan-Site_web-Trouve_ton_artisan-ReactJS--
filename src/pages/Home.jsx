@@ -2,17 +2,18 @@
 function Home() {
 
     return (
-        <main>
-            <h1>Home</h1>
-            <div className="card">
-                
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
+        <main id="home">
+            <div id="bloc-home_H1">
+                <h1>Comment trouver ton artisan ?</h1>
             </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            <div id="bloc-txt_home">
+                <ol>
+                    <li>Choisir la catégorie d’artisanat dans le menu.</li>
+                    <li>Choisir un artisan.</li>
+                    <li>Le contacter via le formulaire de contact.</li>
+                    <li>Une réponse sera apportée sous 48h.</li>
+                </ol>
+            </div>
         </main>
     )
 }

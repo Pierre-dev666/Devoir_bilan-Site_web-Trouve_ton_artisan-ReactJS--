@@ -5,7 +5,7 @@ function Header() {
         <header>
             <div id='header_first-part'>
                 <Link to="/" id='logo_link'><img src={Logo} id="logo" alt="Vite logo" /></Link>
-                <label for="site-search"></label>
+                <label htmlFor="site-search"></label>
                 <input type="search" id="site-search" name="q" placeholder=' recherche...' />
 
                 <button>Rechercher</button>
