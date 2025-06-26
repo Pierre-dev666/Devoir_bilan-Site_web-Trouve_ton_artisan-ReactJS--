@@ -1,18 +1,17 @@
+import Card from '../components/Card'
 
 function ListOfCraftsman() {
 
     return (
         <main>
-            <h1>Liste d'artisans</h1>
-            <div className="card">
-                
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
+            <div id='list_of_craftsman-cards'>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
         </main>
     )
 }

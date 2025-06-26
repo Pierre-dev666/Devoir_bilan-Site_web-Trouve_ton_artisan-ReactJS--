@@ -8,7 +8,7 @@ function Header() {
                 <label htmlFor="site-search"></label>
                 <input type="search" id="site-search" name="q" placeholder=' recherche...' />
 
-                <button>Rechercher</button>
+                <button id='search_button'>Rechercher</button>
             </div>
 
             <nav className="flex gap-4" id='header_second-part'>

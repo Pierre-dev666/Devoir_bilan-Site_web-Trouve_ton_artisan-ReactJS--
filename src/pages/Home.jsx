@@ -1,4 +1,4 @@
-
+import Card from '../components/Card'
 function Home() {
 
     return (
@@ -13,6 +13,11 @@ function Home() {
                     <li>Le contacter via le formulaire de contact.</li>
                     <li>Une réponse sera apportée sous 48h.</li>
                 </ol>
+            </div>
+            <div id='home_cards'>
+                <Card />
+                <Card />
+                <Card />
             </div>
         </main>
     )
