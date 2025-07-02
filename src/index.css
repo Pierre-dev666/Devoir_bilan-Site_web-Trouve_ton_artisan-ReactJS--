@@ -103,6 +103,7 @@ main {
   border-left: 4px solid #00497C;
   border-right: 4px solid #00497C;
   background-color: #F1F8FC;
+  padding-top: 2%;
   padding-bottom: 2%;
 }
 
@@ -185,7 +186,7 @@ li {
 
 #card_first-part {
   border: 4px solid #00497C;
-  background-color: #0074c73d;
+  background-color: #F1F8FC;
   width: 82%;
   text-align: center;
   font-size: xxx-large;
@@ -195,27 +196,27 @@ li {
 
 #card_second-part {
   border: 4px solid #00497C;
-  background-color: #0074c73d;
+  background-color: #F1F8FC;
   width: 82%;
   text-align: center;
-  font-size: xxx-large;
+  font-size: xx-large;
   margin: 2rem;
   border-radius: 0.5rem;
 }
 
 #card_third-part {
   border: 4px solid #00497C;
-  background-color: #0074c73d;
+  background-color: #F1F8FC;
   width: 82%;
   text-align: center;
-  font-size: xxx-large;
+  font-size: xx-large;
   margin: 2rem;
   border-radius: 0.5rem;
 }
 
 #card_fourth-part {
   border: 4px solid #00497C;
-  background-color: #0074c73d;
+  background-color: #F1F8FC;
   width: 82%;
   text-align: center;
   font-size: xxx-large;
@@ -229,6 +230,146 @@ li {
   width: 100%;
   justify-content: center;
   padding: 1rem;
+}
+
+#craftsmansheet_first-bloc {
+  display: flex;
+  border: 4px solid #00497C;
+  background-color: #0074c73d;
+  width: 42rem;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#craftsmansheet_first-part {
+  border: 4px solid #00497C;
+  background-color: #F1F8FC;
+  width: 82%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#craftsmansheet_second-part {
+  border: 4px solid #00497C;
+  background-color: #F1F8FC;
+  width: 82%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#craftsmansheet_second-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid #00497C;
+  background-color: #0074c73d;
+  width: 42rem;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+}
+
+#craftsmansheet_third-part {
+  border: 4px solid #00497C;
+  background-color: #F1F8FC;
+  width: 34%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#craftsmansheet_fourth-part {
+  border: 4px solid #00497C;
+  background-color: #F1F8FC;
+  width: 34%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#craftsmansheet_fifth-part {
+  border: 4px solid #00497C;
+  background-color: #F1F8FC;
+  width: 34%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#craftsmansheet_sixth-part {
+  border: 4px solid #00497C;
+  background-color: #F1F8FC;
+  width: 34%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#craftsmansheet_seventh-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#form {
+  margin: 1rem;
+}
+
+#form input {
+  height: 3.5rem;
+  width: 33.3%;
+  margin-left: 0rem;
+  font-size: x-large;
+  font-family: graphik;
+  background-color: #F1F8FC;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 4px solid #00497C;
+}
+
+
+#name{
+  border-top-left-radius: 0.5rem;
+}
+
+#object{
+    border-top-right-radius: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  height: 12rem;
+  font-size: x-large;
+  margin-left: 0rem;
+  font-size: x-large;
+  font-family: graphik;
+  background-color: #F1F8FC;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 4px solid #00497C;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#validate {
+  background-color: #0074C7;
+  color: #F1F8FC;
+  border-radius: 1rem;
+  width: 9rem;
+  height: 3rem;
+  margin-bottom: 4rem;
+
 }
 
 #HazardSign {
