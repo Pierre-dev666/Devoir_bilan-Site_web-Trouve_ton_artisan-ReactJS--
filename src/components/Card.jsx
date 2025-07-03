@@ -12,12 +12,16 @@ function Card() {
         getUserInformation();
 
     }, []);
+    function ClickOnCard(){
+        window.location.replace("http://localhost:5173/CraftsmanSheetPage",
+);}
 
     return (
-        <div id='card'>
+        
+        <div id='card' onClick={ClickOnCard}>
      
                 <div id="card_first-part">
-                    <Link to="/CraftsmanSheetPage" ><button>Bâtiment</button></Link>
+                    <p>{user.name}</p>
                 </div>
                 <div id="card_second-part">
                     <p>Note :{user.name}</p>
