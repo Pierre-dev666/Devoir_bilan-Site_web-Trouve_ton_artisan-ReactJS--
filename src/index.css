@@ -73,8 +73,15 @@ a {
 p {
   margin: 0px;
   padding: 10px;
-  color: #384050;
+  color: #00497C;
   font-family: graphik;
+  font-size: xx-large;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
 }
 
 #logo_link {
@@ -202,6 +209,15 @@ li {
   font-size: xx-large;
   margin: 2rem;
   border-radius: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #00497C;
+}
+
+#card_second-part p{
+    color: #0074C7;
+    font-size: inherit;
 }
 
 #card_third-part {
@@ -236,7 +252,7 @@ li {
   display: flex;
   border: 4px solid #00497C;
   background-color: #0074c73d;
-  width: 42rem;
+  width: 50rem;
   text-align: center;
   font-size: xxx-large;
   margin: 2rem;
@@ -246,7 +262,7 @@ li {
 #craftsmansheet_first-part {
   border: 4px solid #00497C;
   background-color: #F1F8FC;
-  width: 82%;
+  width: 22%;
   text-align: center;
   font-size: xxx-large;
   margin: 2rem;
@@ -263,12 +279,16 @@ li {
   border-radius: 0.5rem;
 }
 
+#craftsmansheet_second-part p {
+  font-size: xxx-large;
+}
+
 #craftsmansheet_second-bloc {
   display: flex;
   flex-wrap: wrap;
   border: 4px solid #00497C;
   background-color: #0074c73d;
-  width: 42rem;
+  width: 50rem;
   text-align: center;
   font-size: xxx-large;
   margin: 2rem;
@@ -279,37 +299,63 @@ li {
 #craftsmansheet_third-part {
   border: 4px solid #00497C;
   background-color: #F1F8FC;
-  width: 34%;
+  width: 40%;
   text-align: center;
-  font-size: xxx-large;
+  font-size: smaller;
   margin: 2rem;
   border-radius: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #00497C;
+}
+
+#craftsmansheet_third-part p {
+  color: #0074C7;
+  font-size: inherit;
 }
 
 #craftsmansheet_fourth-part {
   border: 4px solid #00497C;
   background-color: #F1F8FC;
-  width: 34%;
+  width: 40%;
   text-align: center;
-  font-size: xxx-large;
+  font-size: smaller;
   margin: 2rem;
   border-radius: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #00497C;
+}
+
+#craftsmansheet_fourth-part p {
+  color: #0074C7;
+  font-size: inherit;
 }
 
 #craftsmansheet_fifth-part {
   border: 4px solid #00497C;
   background-color: #F1F8FC;
-  width: 34%;
+  width: 40%;
   text-align: center;
   font-size: xxx-large;
   margin: 2rem;
   border-radius: 0.5rem;
 }
 
+#about_part-1 {
+  border-bottom: 8px solid #00497C;
+}
+
+#about_part-2 {
+  font-size: large;
+}
+
 #craftsmansheet_sixth-part {
   border: 4px solid #00497C;
   background-color: #F1F8FC;
-  width: 34%;
+  width: 40%;
   text-align: center;
   font-size: xxx-large;
   margin: 2rem;
@@ -339,12 +385,12 @@ li {
 }
 
 
-#name{
+#name {
   border-top-left-radius: 0.5rem;
 }
 
-#object{
-    border-top-right-radius: 0.5rem;
+#object {
+  border-top-right-radius: 0.5rem;
 }
 
 textarea {

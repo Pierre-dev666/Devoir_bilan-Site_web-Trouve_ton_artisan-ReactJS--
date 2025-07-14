@@ -1,41 +1,46 @@
 import React, { useEffect, useState } from "react"
+import ImageIcon from '../assets/img/image_representation.png'
 
 function CraftsmanSheet() {
 
-    const [user, setUsers] = useState([]);
-    const getUserInformation = async () => {
-        const res = await fetch("http://localhost:3000/users/test@test.fr");
+
+    const [artisan, setArtisans] = useState([]);
+    const getArtisanInformation = async () => {
+        const res = await fetch("http://localhost:3000/artisans/6874632aff1b1e2afa973074");
         const json = await res.json();
-        setUsers(json);
+        setArtisans(json);
+
     }
     useEffect(() => {
-        getUserInformation();
+        getArtisanInformation();
 
     }, []);
+
     return (
         <div id='craftsmansheet'>
             <div id="craftsmansheet_first-bloc">
                 <div id='craftsmansheet_first-part'>
-                    <p>blabla</p>
+                     <img src={ImageIcon} alt="image_representation" />
                 </div>
                 <div id='craftsmansheet_second-part'>
-                    <p>blabla</p>
+                    <p>{artisan.nom_entreprise}</p>
                 </div>
             </div>
             <div id="craftsmansheet_second-bloc">
                 <div id='craftsmansheet_third-part'>
-                    <p>blabla</p>
+                    <p>{artisan.artisan_speciality}</p>
                 </div>
                 <div id='craftsmansheet_fourth-part'>
-                    <p>blabla</p>
+                    Note :<p>{artisan.artisan_note}</p>
                 </div>
                 <div id='craftsmansheet_fifth-part'>
-                    <p>blabla</p>
+                    <p id="about_part-1">A propos</p>
+                    <p id="about_part-2">{artisan.artisan_about}</p>
                 </div>
                 <div id='craftsmansheet_sixth-part'>
-                    <p>blabla</p>
+                    <iframe src={artisan.artisan_localisation}></iframe>
                 </div>
-                <form id='craftsmansheet_seventh-part'>
+                <form  action="mailto:pierroxthefox@hotmail.fr" id='craftsmansheet_seventh-part' method="post">
                     <fieldset id="form">
                         <input type="text" placeholder="Nom..." id="name" required />
                         <label htmlFor="name"></label>

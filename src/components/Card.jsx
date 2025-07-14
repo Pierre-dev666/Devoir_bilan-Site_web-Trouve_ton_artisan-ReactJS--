@@ -1,38 +1,62 @@
 import React, { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
+import ImageFullStar from '../assets/img/fullstar.png'
+import ImageEmptyStar from '../assets/img/emptystar.png'
 
 function Card() {
-    const [user, setUsers] = useState([]);
-    const getUserInformation = async () => {
-        const res = await fetch("http://localhost:3000/users/test@test.fr");
+    const [artisan, setArtisans] = useState([]);
+    const getArtisanInformation = async () => {
+        const res = await fetch("http://localhost:3000/artisans/6874632aff1b1e2afa973074");
         const json = await res.json();
-        setUsers(json);
+        setArtisans(json);
+
     }
     useEffect(() => {
-        getUserInformation();
+        getArtisanInformation();
 
     }, []);
-    function ClickOnCard(){
+    function ClickOnCard() {
         window.location.replace("http://localhost:5173/CraftsmanSheetPage",
-);}
+
+        );
+    }
+
+    function Note() {
+        let note = 0;
+        if (artisan.artisan_note >= 0 && artisan.artisan_note <= 1.4) {
+            note = 1;
+        }
+        if (artisan.artisan_note >= 1.5 && artisan.artisan_note <= 2.4) {
+            note = 2;
+        }
+        if (artisan.artisan_note >= 2.5 && artisan.artisan_note <= 3.4) {
+            note = 3;
+        }
+        if (artisan.artisan_note >= 3.5 && artisan.artisan_note <= 4.4) {
+            note = 4;
+        }
+        if (artisan.artisan_note >= 4.5 && artisan.artisan_note <= 5) {
+            note = 5
+            console.log(note)
+        }
+    }
 
     return (
-        
         <div id='card' onClick={ClickOnCard}>
-     
-                <div id="card_first-part">
-                    <p>{user.name}</p>
-                </div>
-                <div id="card_second-part">
-                    <p>Note :{user.name}</p>
-                </div>
-                <div id="card_third-part">
-                    <p>{user.name}</p>
-                </div>
-                <div id="card_fourth-part">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11441.390831487402!2d0.6291456000000001!3d44.1999046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12abb31daed28661%3A0x2ecfc644f277ef52!2sCIN%C3%89MA%20CGR%20Agen!5e0!3m2!1sfr!2sfr!4v1751423113600!5m2!1sfr!2sfr"></iframe>
-                </div>
-           
+
+            <div id="card_first-part">
+                <p>{artisan.nom_entreprise}</p>
+            </div>
+            <div id="card_second-part">
+                Note :<p>{artisan.artisan_note}</p>
+            </div>
+            <div id="card_third-part">
+                <p>{artisan.artisan_speciality}</p>
+            </div>
+            <div id="card_fourth-part">
+                <iframe src={artisan.artisan_localisation}></iframe>
+            </div>
+
         </div>
     )
 }
