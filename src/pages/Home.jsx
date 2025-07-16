@@ -1,5 +1,6 @@
 import Card from '../components/Card'
 function Home() {
+    
 
     return (
         <main id="home">

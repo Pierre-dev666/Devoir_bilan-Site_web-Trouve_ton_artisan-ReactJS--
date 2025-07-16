@@ -141,6 +141,11 @@ button:hover {
   color: #f1f8fcd2;
 }
 
+#stars {
+  width: 10rem;
+  margin-left: 1rem;
+}
+
 /* --------------- Fin des components/balises --------------- */
 
 #home {
@@ -215,9 +220,9 @@ li {
   color: #00497C;
 }
 
-#card_second-part p{
-    color: #0074C7;
-    font-size: inherit;
+#card_second-part p {
+  color: #0074C7;
+  font-size: inherit;
 }
 
 #card_third-part {
