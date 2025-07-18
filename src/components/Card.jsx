@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { createElement, useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
 import ImageZeroStars from '../assets/img/0stars.png'
 import ImageOneStars from '../assets/img/1stars.png'
@@ -8,7 +8,7 @@ import ImageFourStars from '../assets/img/4stars.png'
 import ImageFiveStars from '../assets/img/5stars.png'
 
 function Card() {
-
+const tibody = 0;
     const [artisan, setArtisans] = useState([]);
 
     let stars = ImageZeroStars;
@@ -36,9 +36,22 @@ function Card() {
         firstRead = 1;
     }
     const getArtisanInformation = async () => {
-        const res = await fetch("http://localhost:3000/artisans/"+"68779ee281e1da4350a09157");
-        const json = await res.json();
-        setArtisans(json);
+        await fetch("http://localhost:3000/artisans")
+            .then((response) => {
+
+                return response.json();
+
+            })
+            .then((artisan) => {
+                for (let i = 0; i < 17; i++) {
+                let artisanId = (artisan[i]._id);
+                    console.log(artisanId)
+                    console.log(artisan[i])
+                    let body = (artisan[0]._id);
+                    console.log(body)
+                }
+
+            })
 
     }
     useEffect(() => {
@@ -50,27 +63,25 @@ function Card() {
 
         );
     }
- /*    var i = 1;
-    var id = res._id('edit-link-name-'+i);*/
 
 
     return (
         <div id='card' onClick={ClickOnCard}>
+            <ul id="ul">
+                <li id="card_first-part">
+                    <p>{tibody}</p>
+                </li>
+                <li id="card_second-part">
 
-            <div id="card_first-part">
-                <p>{artisan.nom_entreprise}</p>
-            </div>
-            <div id="card_second-part">
-
-                Note :<img src={stars} id="stars"></img>
-            </div>
-            <div id="card_third-part">
-                <p>{artisan.artisan_speciality}</p>
-            </div>
-            <div id="card_fourth-part">
-                <iframe src={artisan.artisan_localisation}></iframe>
-            </div>
-
+                    Note :<img src={stars} id="stars"></img>
+                </li>
+                <li id="card_third-part">
+                    <p>{artisan.artisan_speciality}</p>
+                </li>
+                <li id="card_fourth-part">
+                    <iframe src={artisan.artisan_localisation}></iframe>
+                </li>
+            </ul>
         </div>
     )
 }

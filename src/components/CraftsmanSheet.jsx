@@ -32,7 +32,7 @@ function CraftsmanSheet() {
             }
             if (artisan.artisan_note >= 4.5 && artisan.artisan_note <= 5) {
                 stars = ImageFiveStars;
-                console.log(stars)
+                /*console.log(stars)*/
             }
             firstRead = 1;
         }
