@@ -1,6 +1,7 @@
-import Card from '../components/Card'
+import CardDefault from '../components/Card'
+
 function Home() {
-    
+
 
     return (
         <main id="home">
@@ -15,10 +16,10 @@ function Home() {
                     <li>Une réponse sera apportée sous 48h.</li>
                 </ol>
             </div>
-            <div id='home_cards'>
-                <Card />
-                <Card />
-                <Card />
+            <div className='home_cards'>
+                <CardDefault />
+                <CardDefault />
+                <CardDefault />
             </div>
         </main>
     )
