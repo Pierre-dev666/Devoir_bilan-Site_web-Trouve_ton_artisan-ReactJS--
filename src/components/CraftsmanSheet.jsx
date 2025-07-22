@@ -38,7 +38,7 @@ function CraftsmanSheet() {
         }
 
     const getArtisanInformation = async () => {
-        const res = await fetch("http://localhost:3000/artisans/68779ee281e1da4350a09157");
+        const res = await fetch("https://api-rest-trouve-ton-artisan.onrender.com/artisans/68779ee281e1da4350a09157");
         const json = await res.json();
         setArtisans(json);
 

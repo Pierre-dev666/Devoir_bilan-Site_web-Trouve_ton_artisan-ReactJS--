@@ -15,7 +15,7 @@ function ListOfCraftsman() {
     const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3000/artisans")
+    fetch("https://api-rest-trouve-ton-artisan.onrender.com/artisans")
       .then((res) => res.json())
       .then((data) => {
         const filtered = data.filter(a =>

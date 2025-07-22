@@ -12,7 +12,7 @@ function CraftsmanSheetPage() {
     const mailTo = "mailto:"
 
     useEffect(() => {
-        fetch(`http://localhost:3000/artisans/${id}`)
+        fetch(`https://api-rest-trouve-ton-artisan.onrender.com/artisans/${id}`)
             .then(res => res.json())
             .then(setArtisan)
             .catch(console.error);
