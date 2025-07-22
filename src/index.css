@@ -580,3 +580,87 @@ footer {
 
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  #header_first-part, #header_second-part {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    width: 90%;
+    margin: 0.5rem auto;
+    font-size: large;
+  }
+
+  #search_button {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  #home_cards, #list_of_craftsman-cards, #craftsmansheet_seventh-part {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 95%;
+    padding: 1rem;
+    border: none;
+  }
+
+  #bloc-home_H1, #bloc-txt_home, #bloc-error_H1, #bloc-txt_error, #bloc-txt_légals-pages {
+    width: 90%;
+    font-size: large;
+  }
+
+  #craftsmansheet_first-bloc, #craftsmansheet_second-bloc {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  #craftsmansheet_first-part, #craftsmansheet_second-part, #craftsmansheet_third-part,
+  #craftsmansheet_fourth-part, #craftsmansheet_fifth-part, #craftsmansheet_sixth-part {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  #footer_first-part, #footer_second-part {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  #footer_first-part a, #tel {
+    font-size: large;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  button, header button {
+    width: 90%;
+    font-size: large;
+    padding: 0.6rem;
+  }
+
+  textarea, #form input {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  ol {
+    margin: 1rem;
+    padding: 0;
+  }
+}
