@@ -1,7 +1,7 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss/src/css/preflight.css";
+@import "tailwindcss/src/css/components.css";
+@import "tailwindcss/src/css/utilities.css";
 
 @font-face {
   font-family: "graphik";
