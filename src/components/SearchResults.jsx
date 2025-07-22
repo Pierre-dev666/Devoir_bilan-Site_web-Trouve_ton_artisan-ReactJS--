@@ -38,7 +38,7 @@ function SearchResults() {
             <div id="card_second-part">
               <p>
                 <strong>Note :</strong>{" "}
-                <span style={{ color: "blue", fontSize: "2rem" }}>
+                <span style={{ color: "#0074c7", fontSize: "1.6rem" }}>
                   {renderStars(a.artisan_note)}
                 </span>
               </p>
